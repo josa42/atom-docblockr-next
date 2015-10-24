@@ -59,8 +59,8 @@ describe('ParserPhp', () => {
       expect(parser.parse_var('$foo = new Foo();')).toEqual(['$foo', 'new Foo()'])
     })
 
-    xit('should return var "foo" with value "[]"', () => {
-      expect(parser.parse_var('$foo = array();')).toEqual(['foo', 'array()'])
+    it('should return var "foo" with value "[]"', () => {
+      expect(parser.parse_var('$foo = array();')).toEqual(['$foo', 'array()'])
     })
 
     it('should return var "foo" with value "\'foo\'"', () => {
