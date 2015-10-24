@@ -14,22 +14,22 @@ describe('ParserObjC', () => {
   })
 
   describe('get_definition()', () => {
-    it('should be implemented', () => expect(false).toBe(true))
+    xit('should be implemented', () => expect(false).toBe(true))
   })
 
   describe('parse_function()', () => {
-    it('should be implemented', () => expect(false).toBe(true))
+    xit('should be implemented', () => expect(false).toBe(true))
   })
 
   describe('parse_args()', () => {
-    it('should be implemented', () => expect(false).toBe(true))
+    xit('should be implemented', () => expect(false).toBe(true))
   })
 
   describe('get_function_return_type()', () => {
-    it('should be implemented', () => expect(false).toBe(true))
+    xit('should be implemented', () => expect(false).toBe(true))
   })
 
   describe('parse_var()', () => {
-    it('should be implemented', () => expect(false).toBe(true))
+    xit('should be implemented', () => expect(false).toBe(true))
   })
 })
