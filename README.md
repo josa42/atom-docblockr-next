@@ -1,6 +1,9 @@
-# Docblockr Package
+# Docblockr next Package
 
-[View the changelog](https://github.com/nikhilkalige/docblockr/blob/master/CHANGELOG.md)
+**This is a fork of [docblockr](https://atom.io/packages/docblockr).**
+
+
+[View the changelog](https://github.com/josa42/docblockr-next/blob/master/CHANGELOG.md)
 
 DocBlockr is a package for [Atom][atom] which is designed to make writing documentation faster and easier.
 
@@ -35,28 +38,28 @@ The main development branch is `develop` and the stable 'production' branch is `
 
 Pressing **enter** or **tab** after `/**` (or `###*` for Coffee-Script) will yield a new line and will close the comment.
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/basic.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/basic.gif)
 
 Single-asterisk comment blocks behave similarly:
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/basic-block.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/basic-block.gif)
 
 ### Function documentation
 
 However, if the line directly afterwards contains a function definition, then its name and parameters are parsed and some documentation is automatically added.
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/function-template.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/function-template.gif)
 
 You can then press `tab` to move between the different fields.
 
 If you have many arguments, or long variable names, it might be useful to spread your arguments across multiple lines. DocBlockr will handle this situation too:
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/long-args.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/long-args.gif)
 
 In languages which support type hinting or default values, then those types are prefilled as the datatypes.
 
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/type-hinting.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/type-hinting.gif)
 
 DocBlockr will try to make an intelligent guess about the return value of the function.
 
@@ -75,7 +78,7 @@ If the line following your docblockr contains a variable declaration, DocBlockr 
 
 If you press `shift+enter` after the opening `/**` then the docblockr will be inserted inline.
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/vars.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/vars.gif)
 
 DocBlockr will also try to determine the type of the variable from its name. Variables starting with `is` or `has` are assumed to be booleans, and `callback`, `cb`, `done`, `fn`, and `next` are assumed to be functions. If you use your own variable naming system (eg: hungarian notation: booleans all start with `b`, arrays start with `arr`), you can define these rules yourself.
 
@@ -83,25 +86,25 @@ DocBlockr will also try to determine the type of the variable from its name. Var
 
 Pressing enter inside a docblock will automatically insert a leading asterisk and maintain your indentation.
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/auto-indent.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/auto-indent.gif)
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/auto-indent-2.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/auto-indent-2.gif)
 
 This applies to docblock comments `/** like this */` as well as inline double-slash comments `// like this`
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/single-line.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/single-line.gif)
 
 In either case, you can press `shift+enter` to stop the automatic extension.
 
 Oftentimes, when documenting a parameter, or adding a description to a tag, your description will cover multiple lines. If the line you are on is directly following a tag line, pressing `tab` will move the indentation to the correct position.
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/deep-indent.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/deep-indent.gif)
 
 ### Multiline comment decoration
 
 If you write a multline comment and use `Docblockr:Decorate Multiline`, Docblockr will create block comment decoration.
 
-![](https://raw.githubusercontent.com/NikhilKalige/docblockr/master/resources/multiline-decorate.gif)
+![](https://raw.githubusercontent.com/josa42/docblockr-next/master/resources/multiline-decorate.gif)
 
 ### Comment decoration
 

@@ -1,9 +1,9 @@
 {
-  "name": "docblockr",
+  "name": "docblockr-next",
   "main": "./lib/docblockr.js",
   "version": "0.7.3",
   "description": "A helper package for writing documentation",
-  "repository": "https://github.com/nikhilkalige/docblockr",
+  "repository": "https://github.com/josa42/docblockr-next",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
