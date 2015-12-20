@@ -13,15 +13,15 @@ describe('ParserCoffeeScript', () => {
     })
   })
 
-  describe('parse_function()', () => {
+  describe('parseFunction()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('parse_var()', () => {
+  describe('parseVar()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('guess_type_from_value()', () => {
+  describe('guessTypeFromValue()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 })

@@ -13,23 +13,23 @@ describe('ParserObjC', () => {
     })
   })
 
-  describe('get_definition()', () => {
+  describe('getDefinition()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('parse_function()', () => {
+  describe('parseFunction()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('parse_args()', () => {
+  describe('parseArgs()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('get_function_return_type()', () => {
+  describe('getFunctionReturnType()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('parse_var()', () => {
+  describe('parseVar()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 })

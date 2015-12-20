@@ -3,7 +3,7 @@
 import DocsParser from '../lib/docsparser';
 
 class BasicParse extends DocsParser {
-  setup_settings() {
+  setupSettings() {
     this.settings = { typeTag: 'type' };
   }
 }
@@ -19,22 +19,22 @@ describe('DocsParser()', () => {
     })
   })
 
-  describe('is_existing_comment()', () => {
+  describe('isExistingComment()', () => {
     it('should comment line', () => {
-      expect(parser.is_existing_comment(' * test')).toBe(true)
-      expect(parser.is_existing_comment('test')).toBe(false)
+      expect(parser.isExistingComment(' * test')).toBe(true)
+      expect(parser.isExistingComment('test')).toBe(false)
     });
   });
 
-  describe('is_numeric()', () => {
+  describe('isNumeric()', () => {
     it('should identify numbers', () => {
-      expect(parser.is_numeric(NaN)).toBe(false)
-      expect(parser.is_numeric("test")).toBe(false)
-      expect(parser.is_numeric("1")).toBe(true)
-      expect(parser.is_numeric("-1")).toBe(true)
-      expect(parser.is_numeric("+1")).toBe(true)
-      expect(parser.is_numeric(1)).toBe(true)
-      expect(parser.is_numeric(1.1)).toBe(true)
+      expect(parser.isNumeric(NaN)).toBe(false)
+      expect(parser.isNumeric("test")).toBe(false)
+      expect(parser.isNumeric("1")).toBe(true)
+      expect(parser.isNumeric("-1")).toBe(true)
+      expect(parser.isNumeric("+1")).toBe(true)
+      expect(parser.isNumeric(1)).toBe(true)
+      expect(parser.isNumeric(1.1)).toBe(true)
     })
   });
 
@@ -42,50 +42,50 @@ describe('DocsParser()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('format_var()', () => {
+  describe('formatVar()', () => {
     // it('should', () => {
-    //   expect(parser.format_var('foo', 'bar', 'string')).toBe(['${1:[foo description]}', '@type ${1:string}'])
+    //   expect(parser.formatVar('foo', 'bar', 'string')).toBe(['${1:[foo description]}', '@type ${1:string}'])
     // })
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('get_type_info()', () => {
+  describe('getTypeInfo()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('format_function()', () => {
+  describe('formatFunction()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('get_function_return_type()', () => {
+  describe('getFunctionReturnType()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('parse_args()', () => {
+  describe('parseArgs()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('get_arg_type()', () => {
+  describe('getArgType()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('get_arg_name()', () => {
+  describe('getArgName()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('add_extra_tags()', () => {
+  describe('addExtraTags()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('guess_type_from_name()', () => {
+  describe('guessTypeFromName()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('get_matching_notations()', () => {
+  describe('getMatchingNotations()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('get_definition()', () => {
+  describe('getDefinition()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 

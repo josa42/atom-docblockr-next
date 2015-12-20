@@ -81,39 +81,39 @@ xdescribe('DocblockrWorker()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('fill_array()', () => {
+  describe('fillArray()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('read_line()', () => {
+  describe('readLine()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('scope_range()', () => {
+  describe('scopeRange()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('get_parser()', () => {
+  describe('getParser()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('generate_snippet()', () => {
+  describe('generateSnippet()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('substitute_variables()', () => {
+  describe('substituteVariables()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('align_tags()', () => {
+  describe('alignTags()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('fix_tab_stops()', () => {
+  describe('fixTabStops()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 
-  describe('create_snippet()', () => {
+  describe('createSnippet()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   });
 })

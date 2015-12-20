@@ -13,27 +13,27 @@ describe('ParserTypeScript', () => {
     })
   })
 
-  describe('parse_function()', () => {
+  describe('parseFunction()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('get_arg_type()', () => {
+  describe('getArgType()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('get_arg_name()', () => {
+  describe('getArgName()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('parse_var()', () => {
+  describe('parseVar()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('get_function_return_type()', () => {
+  describe('getFunctionReturnType()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('guess_type_from_value()', () => {
+  describe('guessTypeFromValue()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 

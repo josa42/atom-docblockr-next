@@ -13,11 +13,11 @@ describe('ParserRust', () => {
     })
   })
 
-  describe('parse_function()', () => {
+  describe('parseFunction()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('format_function()', () => {
+  describe('formatFunction()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 })

@@ -13,49 +13,49 @@ describe('ParserActionScript', () => {
     })
   })
 
-  describe('parse_function()', () => {
+  describe('parseFunction()', () => {
 
     it('should parse anonymous function', () => {
-      const out = parser.parse_function('function (a:String)')
+      const out = parser.parseFunction('function (a:String)')
       expect(out).toEqual([null, 'a:String', null, {} ])
     })
 
     it('should parse function', () => {
-      const out = parser.parse_function('name : function(a:String)')
+      const out = parser.parseFunction('name : function(a:String)')
 
       // expect(out).toEqual([ 'name', 'a:String', null, {} ])
       expect(out).toEqual([ null, 'a:String', null, {} ])
     })
 
     it('should parse function', () => {
-      const out = parser.parse_function('function name(a:String)')
+      const out = parser.parseFunction('function name(a:String)')
 
       // expect(out).toEqual([ 'name', 'a:String', null, {} ])
       expect(out).toEqual([ null, 'a:String', null, {} ])
     })
 
     it('should parse function', () => {
-      const out = parser.parse_function('name = function(a:String)')
+      const out = parser.parseFunction('name = function(a:String)')
 
       // expect(out).toEqual([ 'name', 'a:String', null, {} ])
       expect(out).toEqual([ null, 'a:String', null, {} ])
     })
   })
 
-  describe('parse_var()', () => {
+  describe('parseVar()', () => {
     it('should always return null', () => {
-      const out = parser.parse_var('foo = "Bar"')
+      const out = parser.parseVar('foo = "Bar"')
       expect(out).toEqual(null)
     })
   })
 
-  describe('get_arg_name()', () => {
+  describe('getArgName()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('get_arg_type()', () => {
+  describe('getArgType()', () => {
     it('should always return null', () => {
-      const out = parser.parse_var('')
+      const out = parser.parseVar('')
       expect(out).toEqual(null)
     })
   })
