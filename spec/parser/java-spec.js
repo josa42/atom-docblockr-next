@@ -1,6 +1,6 @@
 "use babel"
 
-import Parser from '../../lib/languages/java'
+import Parser from '../../lib/parser/java'
 
 describe('ParserJava', () => {
 

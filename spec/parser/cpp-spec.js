@@ -1,6 +1,6 @@
 "use babel"
 
-import Parser from '../../lib/languages/cpp'
+import Parser from '../../lib/parser/cpp'
 
 describe('ParserCpp', () => {
 

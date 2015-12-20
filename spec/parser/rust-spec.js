@@ -1,6 +1,6 @@
 "use babel"
 
-import Parser from '../../lib/languages/rust'
+import Parser from '../../lib/parser/rust'
 
 describe('ParserRust', () => {
 

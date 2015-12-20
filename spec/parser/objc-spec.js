@@ -1,8 +1,8 @@
 "use babel"
 
-import Parser from '../../lib/languages/typescript'
+import Parser from '../../lib/parser/objc'
 
-describe('ParserTypeScript', () => {
+describe('ParserObjC', () => {
 
   let parser;
 
@@ -13,19 +13,15 @@ describe('ParserTypeScript', () => {
     })
   })
 
+  describe('get_definition()', () => {
+    xit('should be implemented', () => expect(false).toBe(true))
+  })
+
   describe('parse_function()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('get_arg_type()', () => {
-    xit('should be implemented', () => expect(false).toBe(true))
-  })
-
-  describe('get_arg_name()', () => {
-    xit('should be implemented', () => expect(false).toBe(true))
-  })
-
-  describe('parse_var()', () => {
+  describe('parse_args()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
@@ -33,8 +29,7 @@ describe('ParserTypeScript', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
 
-  describe('guess_type_from_value()', () => {
+  describe('parse_var()', () => {
     xit('should be implemented', () => expect(false).toBe(true))
   })
-
 })

@@ -1,6 +1,6 @@
 "use babel"
 
-import Parser from '../../lib/languages/php'
+import Parser from '../../lib/parser/php'
 
 describe('ParserPhp', () => {
 

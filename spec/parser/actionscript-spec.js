@@ -1,6 +1,6 @@
 "use babel"
 
-import Parser from '../../lib/languages/actionscript'
+import Parser from '../../lib/parser/actionscript'
 
 describe('ParserActionScript', () => {
 
