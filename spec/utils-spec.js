@@ -1,8 +1,8 @@
 "use babel"
 
-import { escape } from '../lib/utils'
+import { escape, isNumeric } from '../lib/utils'
 
-describe('utils.escape()', () => {
+describe('utils', () => {
   xdescribe('escape()', () => {
     it('should be implemented', () => expect(false).toBe(true))
 
@@ -14,4 +14,17 @@ describe('utils.escape()', () => {
       // expect(escape('foo {}')).toBe('foo {}')
     })
   })
+
+  describe('isNumeric()', () => {
+    it('should identify numbers', () => {
+      expect(isNumeric(NaN)).toBe(false)
+      expect(isNumeric("test")).toBe(false)
+      expect(isNumeric("1")).toBe(true)
+      expect(isNumeric("-1")).toBe(true)
+      expect(isNumeric("+1")).toBe(true)
+      expect(isNumeric(1)).toBe(true)
+      expect(isNumeric(1.1)).toBe(true)
+    })
+  })
+
 })

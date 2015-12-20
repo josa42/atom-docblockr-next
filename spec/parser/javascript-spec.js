@@ -7,9 +7,9 @@ describe('ParserJavascript', () => {
   let parser;
 
   beforeEach(() => {
-    waitsForPromise(() => atom.packages.activatePackage('docblockr'))
+    waitsForPromise(() => atom.packages.activatePackage('docblockr-next'))
     runs(() => {
-      parser = new Parser(atom.config.get('docblockr'))
+      parser = new Parser(atom.config.get('docblockr-next'))
     })
   })
 

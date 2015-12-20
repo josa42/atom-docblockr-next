@@ -7,7 +7,7 @@ xdescribe('DocblockrWorker()', () => {
   let docblockrWorker;
 
   beforeEach(() => {
-    waitsForPromise(() => atom.packages.activatePackage('docblockr'))
+    waitsForPromise(() => atom.packages.activatePackage('docblockr-next'))
     runs(() => {
       docblockrWorker = new DocblockrWorker()
     })

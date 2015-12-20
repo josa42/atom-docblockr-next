@@ -13,7 +13,7 @@ describe('DocsParser()', () => {
   let parser;
 
   beforeEach(() => {
-    waitsForPromise(() => atom.packages.activatePackage('docblockr'))
+    waitsForPromise(() => atom.packages.activatePackage('docblockr-next'))
     runs(() => {
       parser = new BasicParse()
     })
@@ -24,18 +24,6 @@ describe('DocsParser()', () => {
       expect(parser.isExistingComment(' * test')).toBe(true)
       expect(parser.isExistingComment('test')).toBe(false)
     });
-  });
-
-  describe('isNumeric()', () => {
-    it('should identify numbers', () => {
-      expect(parser.isNumeric(NaN)).toBe(false)
-      expect(parser.isNumeric("test")).toBe(false)
-      expect(parser.isNumeric("1")).toBe(true)
-      expect(parser.isNumeric("-1")).toBe(true)
-      expect(parser.isNumeric("+1")).toBe(true)
-      expect(parser.isNumeric(1)).toBe(true)
-      expect(parser.isNumeric(1.1)).toBe(true)
-    })
   });
 
   describe('parse()', () => {
