@@ -4,7 +4,7 @@ import Parser from '../../lib/parser/actionscript'
 
 describe('ParserActionScript', () => {
 
-  let parser;
+  let parser
 
   beforeEach(() => {
     waitsForPromise(() => atom.packages.activatePackage('docblockr-next'))
@@ -22,22 +22,16 @@ describe('ParserActionScript', () => {
 
     it('should parse function', () => {
       const out = parser.parseFunction('name : function(a:String)')
-
-      // expect(out).toEqual([ 'name', 'a:String', null, {} ])
       expect(out).toEqual([ null, 'a:String', null, {} ])
     })
 
     it('should parse function', () => {
       const out = parser.parseFunction('function name(a:String)')
-
-      // expect(out).toEqual([ 'name', 'a:String', null, {} ])
       expect(out).toEqual([ null, 'a:String', null, {} ])
     })
 
     it('should parse function', () => {
       const out = parser.parseFunction('name = function(a:String)')
-
-      // expect(out).toEqual([ 'name', 'a:String', null, {} ])
       expect(out).toEqual([ null, 'a:String', null, {} ])
     })
   })

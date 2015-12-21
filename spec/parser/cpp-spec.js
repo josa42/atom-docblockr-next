@@ -4,7 +4,7 @@ import Parser from '../../lib/parser/cpp'
 
 describe('ParserCpp', () => {
 
-  let parser;
+  let parser
 
   beforeEach(() => {
     waitsForPromise(() => atom.packages.activatePackage('docblockr-next'))
